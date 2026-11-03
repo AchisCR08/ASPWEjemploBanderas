@@ -1,0 +1,112 @@
+/* ===== Menú principal ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f 0%, #3a3a5c 100%);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #c9c9e0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 5px solid #ffd166;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Cada opción del menú */
+.opcion {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.opcion:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.vista {
+  height: 120px;
+}
+
+.opcion span {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== Miniaturas de cada fondo ===== */
+.v-atardecer {
+  background:
+    radial-gradient(circle at 50% 58%, #ffd166 0 14px, transparent 15px),
+    linear-gradient(to bottom, transparent 60%, #1d4e89 60%, #0b2545 85%, #e9c46a 85%),
+    linear-gradient(to bottom, #2b1055, #d53369 35%, #ff9a44 60%);
+}
+
+.v-estrellas {
+  background-color: #0b1026;
+  background-image:
+    radial-gradient(2px 2px at 15px 20px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 90px 35px, #fff, transparent);
+  background-size: 110px 100px;
+}
+
+.v-ajedrez {
+  background-color: #f0d9b5;
+  background-image: conic-gradient(#b58863 25%, transparent 25% 50%,
+    #b58863 50% 75%, transparent 75%);
+  background-size: 40px 40px;
+}
+
+.v-lunares {
+  background-color: #ff6b9a;
+  background-image:
+    radial-gradient(#fff 18%, transparent 19%),
+    radial-gradient(#fff 18%, transparent 19%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+footer {
+  text-align: center;
+  color: #9a9ab8;
+  font-size: 14px;
+}
